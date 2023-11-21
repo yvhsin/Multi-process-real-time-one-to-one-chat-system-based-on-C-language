@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <stdlib.h> 
 #define HAVE_STRUCT_TIMESPEC	// 防止 winsock2.h 里的某些结构体与其他头文件中的结构体重复定义
 #include <pthread.h>
 #include <WinSock2.h>
@@ -32,7 +32,7 @@ void* recv_thread(void* p) {
     return NULL;
 }
 
-int main() {
+int main   主要() {
 	// 初始化 sokcet 库
 	WSADATA data;
 	WORD dwVersionRequested = MAKEWORD(2, 2);
